@@ -1,0 +1,28 @@
+table_name,column_name,data_type,description
+customers,customer_id,INTEGER,Unique customer identifier
+customers,age,INTEGER,Customer age
+customers,gender,TEXT,Customer gender
+customers,city,TEXT,City
+customers,membership_level,TEXT,Membership level
+customers,customer_tenure_months,INTEGER,Customer tenure in months
+customers,loyalty_score,FLOAT,Loyalty score between 0 and 100
+customers,estimated_income,FLOAT,Estimated monthly income
+products,product_id,INTEGER,Unique product identifier
+products,category,TEXT,Product category
+products,brand,TEXT,Product brand
+products,supplier_region,TEXT,Supplier region
+products,base_price,FLOAT,Base product price
+transactions,transaction_id,INTEGER,Unique transaction identifier
+transactions,customer_id,INTEGER,Foreign key to customers
+transactions,product_id,INTEGER,Foreign key to products
+transactions,transaction_date,DATE,Transaction date
+transactions,channel,TEXT,Purchase channel
+transactions,quantity,INTEGER,Number of units purchased
+transactions,unit_price,FLOAT,Observed unit price
+transactions,discount_pct,FLOAT,Discount percentage
+transactions,promo_flag,INTEGER,Promotion flag (0/1)
+transactions,payment_method,TEXT,Payment method
+transactions,days_since_last_purchase,INTEGER,Days since previous purchase
+transactions,prior_purchases,INTEGER,Number of prior purchases
+transactions,total_amount,FLOAT,Final transaction amount
+transactions,repeat_purchase_next_month,INTEGER,Target variable (0/1)
